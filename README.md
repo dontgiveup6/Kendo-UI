@@ -1,27 +1,12 @@
-# AngularGrid
+# Task 1
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.8.
+## Json-server
 
-## Development server
+I have used json-server to have a full fake REST API (https://www.npmjs.com/package/json-server).
+Run 'npm run server' in the terminal to start the server with the data. I have a file called `db.json` where the data comes from. There is another file `backbg.json` which has the initial data(same as `db.json`) but it is not being used. I have writen the data myself so I kept a back up file if i needed to start my experiments all over again.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+After starting the json-server run `ng serve` in another terminal to start the app.
 
-## Code scaffolding
+## Info
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+I have implemented sorting, paging and filtering as you would see. In the id column the even number are displayed in red font and the odd - blue. In the department column, I have used different background color for the different departments. There is a toggle button that changes the visibility of the Id column. The edit button puts the user in `edit mode`, in which he/she can add or delete data. In order to see the newly created data after saving the changes, click on the last page (again) to refresh the data.

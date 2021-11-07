@@ -1,0 +1,57 @@
+<form (ngSubmit)="onSubmit()">
+  <div class="form">
+    <div class="form-control">
+      <label for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        [(ngModel)]="name"
+        id="name"
+        placeholder="Enter Name"
+      />
+    </div>
+    <div class="form-control">
+      <label for="age">Age</label>
+      <input
+        type="number"
+        name="age"
+        [(ngModel)]="age"
+        id="age"
+        placeholder="Enter Age"
+      />
+    </div>
+    <div class="form-control">
+      <label for="gender">Gender</label>
+      <select type="text" name="gender" [(ngModel)]="gender" id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div class="form-control">
+      <label for="department">Department</label>
+      <select
+        type="text"
+        name="department"
+        [(ngModel)]="department"
+        id="department"
+      >
+        <option value="Accounting">Accounting</option>
+        <option value="Development">Development</option>
+        <option value="Health">Health</option>
+        <option value="Production">Production</option>
+      </select>
+    </div>
+    <div class="form-control">
+      <label for="salary">Salary</label>
+      <input
+        type="number"
+        name="salary"
+        [(ngModel)]="salary"
+        id="salary"
+        placeholder="Enter Salary"
+      />
+    </div>
+  </div>
+  <input type="submit" value="Save Data" class="btn" />
+</form>
